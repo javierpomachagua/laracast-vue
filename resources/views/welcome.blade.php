@@ -18,7 +18,9 @@
                 {{-- <task-list></task-list>
                 <message-box title="First" body="Hehe"></message-box>
                 <message-box title="Second" body="Haha"></message-box>    --}}
-                <tabs-component>
+
+                {{-- Episode 11 --}}
+                {{-- <tabs-component>
                     <tab-component name="About us" :selected="true">
                         <h1>Here is the content for the about us tab</h1>
                     </tab-component>
@@ -29,9 +31,33 @@
                         <h1>Here is the content for the about me tab</h1>
                     </tab-component>
                     <tab-component name="About any">
-                        <h1>Here is the content for the about any tab</h1>
+                        <h1>Here is the content for the <ab></ab>out any tab</h1>
                     </tab-component>
-                </tabs-component>
+                </tabs-component> --}}
+
+                {{-- Episode 12, 13 --}}
+                {{-- <coupon-component @applied="onCouponApplied"></coupon-component>
+
+                <small v-if="couponApplied">You used a coupon</small> --}}
+
+                {{-- Episode 14 --}}
+                {{-- <modal-component>
+                    <template slot="header">Title</template>
+                    Content Reloaded!
+                    <div slot="footer">
+                        <button class="button is-success">Save changes</button>
+                        <button class="button">Cancel</button>
+                    </div>
+                </modal-component> --}}
+
+                {{-- Episode 15 --}}
+                <progress-view inline-template>
+                    <div>
+                        <h3>Your progress rate in this course is @{{ progressRate }}%</h3>
+                        <p><button @click="progressRate += 10">Update your progress rate</button></p>
+                    </div>
+                </progress-view>
+
             </div>                  
         </div>
 
