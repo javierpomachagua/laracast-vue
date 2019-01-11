@@ -31,6 +31,8 @@ Vue.component('tab-component', require('./components/TabComponent.vue').default)
 Vue.component('tabs-component', require('./components/TabsComponent.vue').default);
 Vue.component('coupon-component', require('./components/CouponComponent.vue').default);
 Vue.component('progress-view', require('./components/ProgressViewComponent.vue').default);
+Vue.component('axios-example', require('./components/AxiosExampleComponent.vue').default);
+Vue.component('project-component', require('./components/ProjectComponent.vue').default);
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to
@@ -39,18 +41,18 @@ Vue.component('progress-view', require('./components/ProgressViewComponent.vue')
  */
 
 const app = new Vue({
-    el: '#app',
-    data() {
-        return {
-            couponApplied: false
-        };
-    },
-    created() {
-        // Eve.$on('applied', () => alert('Hey'));
-    },
-    methods: {
-        onCouponApplied() {
-            this.couponApplied = true;
-        }
-    },
+    el: '#app'
+    // data() {
+    //     return {
+    //         couponApplied: false
+    //     };
+    // },
+    // created() {
+    //     // Eve.$on('applied', () => alert('Hey'));
+    // },
+    // methods: {
+    //     onCouponApplied() {
+    //         this.couponApplied = true;
+    //     }
+    // },
 });

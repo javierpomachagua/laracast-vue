@@ -12,6 +12,8 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.css">
     </head>
     <body>
+        <h3>Umm</h3>
+        @yield('content')
         <div class="container">
              <div id="app">
                 {{-- <example-component></example-component> --}}
@@ -51,15 +53,22 @@
                 </modal-component> --}}
 
                 {{-- Episode 15 --}}
-                <progress-view inline-template>
+                {{-- <progress-view inline-template>
                     <div>
                         <h3>Your progress rate in this course is @{{ progressRate }}%</h3>
                         <p><button @click="progressRate += 10">Update your progress rate</button></p>
                     </div>
-                </progress-view>
+                </progress-view> --}}
 
-            </div>                  
+                {{-- Episode 18 --}}
+                {{-- <axios-example></axios-example> --}}
+                   
+            </div>      
+            
+                     
         </div>
+
+        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 
         <script src="{{ URL::asset('js/app.js') }}"></script>
 

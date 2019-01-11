@@ -18,3 +18,11 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+Route::get('/skills', function () {
+    return ['Laravel', 'PHP', 'Vue', 'JavaScript', 'Tooling'];
+});
+
+Route::resource('projects', 'ProjectController');
+
+
