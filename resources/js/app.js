@@ -1,4 +1,3 @@
-
 /**
  * First we will load all of this project's JavaScript dependencies which
  * includes Vue and other libraries. It is a great starting point when
@@ -7,9 +6,17 @@
 
 require('./bootstrap');
 
-window.Vue = require('vue');
 
+window.Vue = require('vue');
 window.Eve = new Vue();
+
+import Vue from 'vue';
+import VueRouter from 'vue-router';
+window.Vue = Vue;
+Vue.use(VueRouter);
+
+
+import router from './routes';
 
 /**
  * The following block of code may be used to automatically register your
@@ -41,7 +48,8 @@ Vue.component('project-component', require('./components/ProjectComponent.vue').
  */
 
 const app = new Vue({
-    el: '#app'
+    el: '#app',
+    router
     // data() {
     //     return {
     //         couponApplied: false

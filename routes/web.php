@@ -18,11 +18,18 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/spa', function() {
+    return view('spa');
+})->name('spa');
 
 Route::get('/skills', function () {
     return ['Laravel', 'PHP', 'Vue', 'JavaScript', 'Tooling'];
 });
 
 Route::resource('projects', 'ProjectController');
+
+Route::get('/statuses', function() {
+    return App\Status::with('user')->latest()->get();
+});
 
 
